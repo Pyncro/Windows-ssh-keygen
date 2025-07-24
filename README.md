@@ -33,3 +33,6 @@ nano /etc/ssh/sshd_config
 PubkeyAuthentication yes
 PasswordAuthentication no
 PermitEmptyPasswords no
+
+systemctl daemon-reload
+ systemctl restart ssh.socket
